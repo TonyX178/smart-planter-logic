@@ -1,6 +1,11 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Moisture level: 45%" << std::endl;
+    int moisture = 45;
+    std::cout << "Moisture level: " << moisture << "%" << std::endl;
+    
+    if (moisture < 50) {
+        std::cout << "WARNING: Plant needs water!" << std::endl;
+    }
     return 0;
 }
