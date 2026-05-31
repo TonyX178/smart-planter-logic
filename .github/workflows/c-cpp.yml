@@ -25,3 +25,10 @@ jobs:
     # Step C: Execute the compiled program to ensure it doesn't crash
     - name: Run Application
       run: ./sensor_app
+      
+    # Step D: Save the compiled file as a downloadable artifact
+    - name: Upload Compiled Application
+      uses: actions/upload-artifact@v4
+      with:
+        name: smart-planter-executable
+        path: sensor_app
